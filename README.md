@@ -1,82 +1,103 @@
 # Jobscout
 
-A job-search agent: hybrid semantic + keyword retrieval over a constantly changing jobs index, personalised ranking, a tool-using Claude agent with persistent memory, and an eval harness for both retrieval and agent behaviour.
+**An AI job-search agent for students and early-career people: hybrid semantic search over a changing jobs index, personalised ranking, a tool-using LLM agent with persistent memory, and an eval harness that measures both retrieval and agent behaviour.**
 
+**Live demo:** [TODO: paste your Render URL] (free tier: the first load can take about a minute to wake)
+
+[TODO: add a screenshot or a short GIF of the chat finding a role, saved as docs/demo.png]
+
+## What it does
+
+- You tell it your skills and what you want ("I know Python and FastAPI, find remote internships"). It **remembers your profile** between visits.
+- It searches a jobs index with **hybrid retrieval** (embeddings plus keyword search), **filters** by location, remote and job type, and **re-ranks for you** using your skills and preferences.
+- Every recommendation is **structured, validated and explained**: which of your skills matched, whether it's remote, how recent it is.
+- Jobs can be added, updated and expired at any time without rebuilding the index.
+
+## Architecture
+
+```mermaid
+flowchart LR
+    U[User] --> API[FastAPI]
+    API --> AG[Agent loop: LLM + 7 tools]
+    API --> SE[Search endpoint]
+    AG -->|search_jobs| RE[Retriever]
+    SE --> RE
+    RE --> DE[(Chroma: dense vectors)]
+    RE --> BM[BM25: keywords]
+    DE --> RR[RRF fusion]
+    BM --> RR
+    RR --> PR[Personalised re-rank]
+    AG <--> DB[(SQLite: jobs, profiles, chat memory, saved jobs)]
+    IN[Ingest: add / update / expire jobs] --> DE
+    IN --> DB
 ```
-                 ┌────────────── FastAPI ──────────────┐
- browser/API ──► │ /chat   /search   /ingest   /jobs   │
-                 └───────┬───────────────┬─────────────┘
-                         │               │
-                   JobAgent (Claude)   Searcher
-                   tool-use loop        │  dense: Chroma (cosine)  ─┐
-                   memory + guards      │  sparse: BM25            ─┼─► RRF ─► filters ─► personalised re-rank
-                         │              │                           ┘
-                         └────► SQLite (jobs, profiles, chat memory, saved/dismissed)
-                                 ▲
-                      JobIndex.sync(): hash-diff incremental updates + pruning
-```
 
+## What to look at
 
+| If you care about | Look at |
+|---|---|
+| Retrieval, ranking, personalisation | `app/retrieval.py`: dense + BM25 → Reciprocal Rank Fusion → re-rank with a per-result score breakdown |
+| A search index that keeps changing | `app/index.py`: hash-diff sync that re-embeds only changed text, does cheap metadata updates, and prunes expired jobs |
+| LLM agents, tool use, memory | `app/agent.py`: tool-use loop, long-term profile memory, short-term chat memory |
+| Structured outputs and guardrails | `present_recommendations` is schema-validated and every job id must have come from a tool result that turn, so it cannot recommend jobs that do not exist |
+| Evaluating LLM and retrieval quality | `evals/`: Recall@k, MRR, nDCG, latency per pipeline stage, plus behavioural agent tests |
+| Provider portability | `app/llm.py`: runs on Gemini, Groq, Cerebras, OpenRouter, Mistral, Ollama or Claude with one env var |
 
-## Run it
+## Results
+
+[TODO: replace every XX with the numbers from evals/results.md after running `python -m evals.run_retrieval_eval`, and fill in the dataset line.]
+
+Dataset: [TODO: N real job postings from <source>], [TODO: M hand-labelled queries]. Embeddings: `BAAI/bge-small-en-v1.5`.
+
+| Pipeline stage | Recall@10 | MRR | nDCG@10 | p50 latency |
+|---|---|---|---|---|
+| BM25 only | XX | XX | XX | XX ms |
+| Dense only | XX | XX | XX | XX ms |
+| Hybrid (RRF) | XX | XX | XX | XX ms |
+| Hybrid + personalised | XX | XX | XX | XX ms |
+
+Agent behaviour eval (`python -m evals.run_agent_eval`): [TODO: X/5] cases pass, covering correct tool routing, filter extraction, resistance to instructions injected into job text, and no hallucinated job ids.
+
+[TODO: one sentence on the most interesting finding, e.g. what hybrid fixed that dense-only missed, or a failure the agent eval caught and how you fixed it.]
+
+## Engineering decisions
+
+- **Hybrid retrieval with RRF.** Embeddings handle paraphrase ("agents that call tools" ≈ "AI Agents Engineer"); BM25 handles exact skill names and acronyms. Reciprocal Rank Fusion merges ranks, so no score calibration is needed.
+- **Explainable personalisation.** The final score is a fixed blend: 0.60 relevance, 0.20 skill overlap, 0.12 preference match, 0.08 recency. Every result returns its breakdown, so ranking is debuggable rather than a black box.
+- **Incremental indexing.** Each job carries two hashes (text vs all fields), so editing a salary doesn't pay for a new embedding. One vector collection per embedding model means switching models never mixes vector spaces. Chroma can always be rebuilt from SQLite.
+- **Guardrails on the agent.** Job text is treated as untrusted data (prompt-injection defence), tool errors go back to the model instead of crashing, recommended ids are verified against tool results, and the loop has a hard step cap.
+- **Provider-agnostic LLM layer.** The agent is written once against a single message format; an adapter converts to any OpenAI-compatible endpoint, so the project runs on free tiers.
+
+## Tech stack
+
+Python · FastAPI · Pydantic · ChromaDB · BM25 (rank-bm25) · fastembed (ONNX embeddings) · SQLite · Gemini / Claude / OpenAI-compatible LLMs · Docker · pytest
+
+## Run it locally
 
 ```bash
+git clone https://github.com/<you>/jobscout && cd jobscout
+python -m venv .venv && source .venv/bin/activate      # Windows: .\.venv\Scripts\Activate.ps1
 pip install -r requirements-dev.txt
-python scripts/make_sample_data.py          # 120 synthetic jobs + eval set (already committed)
-pytest -q                                   # 20 tests, no network or API key needed
-
-export GEMINI_API_KEY=...                   # or GROQ_API_KEY, ANTHROPIC_API_KEY, ... (see "Choosing an LLM")
-uvicorn app.main:app --reload               # open http://localhost:8000  (API docs at /docs)
+pytest -q                                                # 22 tests, no network or API key needed
+export GEMINI_API_KEY=...                                # free key from Google AI Studio
+uvicorn app.main:app                                     # http://localhost:8000
 ```
 
-Search, indexing and the retrieval eval need no key at all. Only `/chat` and the agent eval call an LLM.
+Search, indexing and the retrieval eval work without any API key; only `/chat` needs one. Full setup, provider options, real-data ingestion and deployment are in [docs/SETUP.md](docs/SETUP.md).
 
-First boot loads `data/jobs.json` and downloads the embedding model (BAAI/bge-small-en-v1.5 via fastembed, ~130 MB). `EMBED_BACKEND=hash` skips the download but is lexical only; use it for tests, not for demos.
+## Project layout
 
-## Choosing an LLM (free options included)
+```
+app/        agent.py  retrieval.py  index.py  llm.py  store.py  models.py  main.py
+evals/      retrieval eval, agent eval, labelled queries
+scripts/    sample-data generator, CSV ingest for real postings
+tests/      22 tests: sync, filters, ranking, agent loop, LLM adapter, API
+static/     minimal chat UI
+```
 
-Set one provider key and the app picks it up (`LLM_PROVIDER=auto`, checked in the order below), or force one with `LLM_PROVIDER`.
+## Limitations and next steps
 
-| Provider | Env var | Default model | Notes |
-|---|---|---|---|
-| `gemini` | `GEMINI_API_KEY` | `gemini-2.5-flash` | Free tier from Google AI Studio, no card. Exact per-model limits are shown in AI Studio and change. |
-| `groq` | `GROQ_API_KEY` | `llama-3.3-70b-versatile` | Free tier, very fast. Tight daily caps on larger models. |
-| `cerebras` | `CEREBRAS_API_KEY` | set `LLM_MODEL` | Free tier, fast. |
-| `openrouter` | `OPENROUTER_API_KEY` | set `LLM_MODEL` (a `:free` model) | Many free models, small daily cap, free model list churns. |
-| `mistral` | `MISTRAL_API_KEY` | `mistral-small-latest` | Free experiment tier. |
-| `ollama` | none | `llama3.1` | Runs locally, no limits, no data leaves your machine. Needs a tool-calling model and decent RAM. |
-| `anthropic` | `ANTHROPIC_API_KEY` | `claude-sonnet-5-5` | Paid, strongest tool use in my testing plan; best for the final demo. |
-| `custom` | `LLM_API_KEY`, `LLM_BASE_URL`, `LLM_MODEL` | none | Any OpenAI-compatible endpoint. |
-
-All non-Anthropic providers go through the OpenAI-compatible adapter in `app/llm.py`; the agent code is identical. Model ids and free limits change, so override with `LLM_MODEL` if a default is retired.
-
-Not every model is equally good at tool calling. Run `python -m evals.run_agent_eval` on the provider you pick; that is exactly what it is for. Also read each provider's data policy before sending real user messages through a free tier.
-
-## Use real data (do this before you put numbers on a resume)
-
-The bundled data is synthetic, and its eval labels come from the generator, so the eval proves the pipeline works, not that it is good.
-
-1. Download a public postings dataset (e.g. a Kaggle LinkedIn job postings dump) and ingest it:
-   `python scripts/ingest_csv.py jobs.csv --title-col ... --desc-col ... --post http://localhost:8000 --admin-token $ADMIN_TOKEN`
-2. Hand-label ~30 queries in `evals/queries.jsonl` (`{"query", "filters", "relevant": [job ids], "profile"?}`). Include ambiguous ones with a profile so personalisation is actually tested.
-3. `python -m evals.run_retrieval_eval` → `evals/results.md` (Recall@k, MRR, nDCG, p50/p95 latency for bm25 / dense / hybrid / personalized).
-4. `python -m evals.run_agent_eval` → tool-routing, filter-extraction, prompt-injection and hallucinated-id checks (real LLM calls).
-
-## Design decisions 
-
-- **Hybrid + RRF.** Dense handles paraphrase ("agents that call tools" ≈ "AI Agents Engineer"); BM25 handles exact skill terms and acronyms. RRF fuses ranks, so no score calibration is needed.
-- **Explainable personalisation.** Final score = 0.60 relevance + 0.20 skill overlap + 0.12 preference match + 0.08 recency. Every hit returns its breakdown and human-readable reasons, which the agent quotes.
-- **Incremental sync.** Two hashes per job (text vs all fields) so a salary edit does not trigger re-embedding. One Chroma collection per embedding model, so swapping models never mixes vector spaces. Chroma is rebuildable from SQLite.
-- **Agent guards.** Recommended ids must have been returned by a tool in the same turn (no hallucinated jobs); job text is flagged as untrusted in the system prompt; tool errors go back to the model as `is_error` results; hard step cap.
-- **Memory.** Long-term: profile and saved/dismissed jobs (dismissed are excluded from search). Short-term: last 12 turns.
-
-## Deploy
-
-Any container host works (Render, Fly, Railway). Mount a volume at `/data`, set your provider key (e.g. `GEMINI_API_KEY`) and `ADMIN_TOKEN`, expose the port. The image pre-downloads the embedding model so cold starts are fast. For a feed that changes, run `scripts/ingest_csv.py --prune` (or POST `/ingest` with `"prune": true`) on a schedule.
-
-## Known limits / next steps
-
-- `/chat` has no auth or rate limiting. Add both before sharing publicly, since each call spends LLM tokens.
-- BM25 is rebuilt in memory when the jobs table changes; fine to tens of thousands of jobs, then move to SQLite FTS5 or Elasticsearch.
-- Add a cross-encoder or LLM re-ranker on the top 20 and measure it in the eval table.
-- Add an LLM-as-judge check for recommendation reasons (are they supported by the job text?).
+- Free-tier hosting resets user profiles and chat memory when the instance restarts; the job index reloads automatically. A persistent disk or Postgres would fix this.
+- `/chat` has no authentication or rate limiting yet.
+- BM25 is rebuilt in memory when jobs change, which is fine for tens of thousands of jobs. Beyond that, move to SQLite FTS5 or Elasticsearch.
+- Next: a cross-encoder or LLM re-ranker on the top 20, measured in the same eval table, and an LLM-as-judge check that each recommendation reason is supported by the job text.
