@@ -62,7 +62,7 @@ The bundled data is synthetic, and its eval labels come from the generator, so t
 3. `python -m evals.run_retrieval_eval` → `evals/results.md` (Recall@k, MRR, nDCG, p50/p95 latency for bm25 / dense / hybrid / personalized).
 4. `python -m evals.run_agent_eval` → tool-routing, filter-extraction, prompt-injection and hallucinated-id checks (real LLM calls).
 
-## Design decisions worth being able to explain
+## Design decisions 
 
 - **Hybrid + RRF.** Dense handles paraphrase ("agents that call tools" ≈ "AI Agents Engineer"); BM25 handles exact skill terms and acronyms. RRF fuses ranks, so no score calibration is needed.
 - **Explainable personalisation.** Final score = 0.60 relevance + 0.20 skill overlap + 0.12 preference match + 0.08 recency. Every hit returns its breakdown and human-readable reasons, which the agent quotes.
