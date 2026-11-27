@@ -16,17 +16,7 @@ A job-search agent: hybrid semantic + keyword retrieval over a constantly changi
                       JobIndex.sync(): hash-diff incremental updates + pruning
 ```
 
-## What maps to the Elip job description
 
-| They ask for | Where it lives |
-|---|---|
-| LLM agents that use tools and remember context | `app/agent.py` (7 tools, profile + chat memory in SQLite) |
-| Structured outputs | `present_recommendations` tool: Pydantic-validated, ids checked against the DB |
-| Retrieval, ranking, personalisation | `app/retrieval.py` (dense + BM25 → RRF → skill/preference/recency re-rank, with per-hit reasons) |
-| Semantic search over a changing index | `app/index.py` `sync()` (adds, re-embeds only changed text, metadata-only updates, prunes expired) |
-| Evaluate LLM output quality | `evals/` (retrieval metrics per stage; agent routing, injection and hallucination checks) |
-| Python backend, SQL, APIs | FastAPI + SQLite, admin-protected ingest, validated request models |
-| Docker / cloud / live users | `Dockerfile`, `static/index.html` chat page |
 
 ## Run it
 
