@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jobscout</title>
+<style>
+  :root { --bg:#f3f5f7; --panel:#ffffff; --ink:#14202b; --muted:#5b6b78; --line:#d6dde3; --accent:#0b6e6e; color-scheme: light dark; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#10171d; --panel:#18222b; --ink:#e8eef2; --muted:#93a4b1; --line:#2a3743; --accent:#4fc1c1; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 2rem 1rem 7rem; }
+  h1 { font-size: 1.4rem; margin: 0 0 .25rem; letter-spacing: -.01em; }
+  .sub { color: var(--muted); margin: 0 0 1.5rem; }
+  .turn { margin: 1.25rem 0; }
+  .me { color: var(--muted); }
+  .me::before { content: "You: "; font-weight: 600; color: var(--ink); }
+  .reply { white-space: pre-wrap; }
+  .pick { border-left: 3px solid var(--accent); padding: .1rem 0 .1rem .8rem; margin: .8rem 0; }
+  .pick b { display:block; }
+  .pick small { color: var(--muted); display:block; }
+  .pick a { color: var(--accent); }
+  form { position: fixed; left: 0; right: 0; bottom: 0; background: var(--panel); border-top: 1px solid var(--line); padding: .75rem 1rem; }
+  .row { max-width: 42rem; margin: 0 auto; display: flex; gap: .5rem; }
+  input { flex: 1; font: inherit; padding: .6rem .7rem; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); }
+  button { font: inherit; padding: .6rem 1rem; border: 0; border-radius: 6px; background: var(--accent); color: #fff; cursor: pointer; }
+  @media (prefers-color-scheme: dark) { button { color: #08201f; } }
+  button:disabled { opacity: .5; cursor: wait; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Jobscout</h1>
+  <p class="sub">Tell me your skills and what you are looking for. I remember them between visits.</p>
+  <div id="log" aria-live="polite"></div>
+</main>
+<form id="f">
+  <div class="row">
+    <input id="msg" placeholder="e.g. I know Python and FastAPI, find remote internships" autocomplete="off" required maxlength="2000">
+    <button id="go">Send</button>
+  </div>
+</form>
+<script>
+  let uid = localStorage.getItem("jobscout_uid");
+  if (!uid) { uid = "u-" + crypto.randomUUID().slice(0, 12); localStorage.setItem("jobscout_uid", uid); }
+  const log = document.getElementById("log"), f = document.getElementById("f"), msg = document.getElementById("msg"), go = document.getElementById("go");
+
+  function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text) e.textContent = text; return e; }
+
+  f.addEventListener("submit", async (ev) => {
+    ev.preventDefault();
+    const text = msg.value.trim(); if (!text) return;
+    const turn = el("div", "turn"); turn.append(el("div", "me", text));
+    const reply = el("div", "reply", "Searching…"); turn.append(reply); log.append(turn);
+    msg.value = ""; go.disabled = true; turn.scrollIntoView({ block: "end" });
+    try {
+      const r = await fetch("/chat", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ user_id: uid, message: text }) });
+      if (!r.ok) throw new Error((await r.json().catch(() => ({}))).detail || r.statusText);
+      const data = await r.json();
+      reply.textContent = data.reply;
+      for (const rec of data.recommendations) {
+        const j = rec.job, p = el("div", "pick");
+        p.append(el("b", "", `${j.title}, ${j.company}`));
+        p.append(el("small", "", `${j.location}${j.remote ? " (remote ok)" : ""} · ${j.job_type}`));
+        p.append(el("span", "", rec.reason));
+        if (j.url) { const a = el("a", "", " View posting"); a.href = j.url; a.target = "_blank"; a.rel = "noopener"; p.append(document.createElement("br"), a); }
+        turn.append(p);
+      }
+    } catch (e) { reply.textContent = "Something went wrong: " + e.message; }
+    go.disabled = false; msg.focus(); turn.scrollIntoView({ block: "end" });
+  });
+</script>
+</body>
+</html>

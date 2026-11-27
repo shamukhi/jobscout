@@ -1,0 +1,20 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets and local config (the empty template stays tracked)
+.env
+.env.*
+!.env.example
+
+# App state: SQLite and Chroma vectors are rebuilt from data/jobs.json
+var/
+*.sqlite3
+
+# Generated / editor / OS files
+jobs_ingest.json
+*.log
+.vscode/
+Thumbs.db

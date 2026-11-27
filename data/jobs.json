@@ -1,0 +1,2333 @@
+[
+ {
+  "id": "job-001",
+  "title": "Generative AI Engineer",
+  "company": "Nimbus Labs",
+  "location": "Bengaluru",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Design tool-using AI agents, evaluate model outputs and iterate on prompts and guardrails. You will talk to users and own outcomes. Experience with python and prompt engineering is expected.",
+  "skills": [
+   "python",
+   "prompt engineering",
+   "vector databases",
+   "rag"
+  ],
+  "posted_at": "2026-11-22T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-001"
+ },
+ {
+  "id": "job-002",
+  "title": "LLM Engineer",
+  "company": "Cobalt Mobility",
+  "location": "Mumbai",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Design tool-using AI agents, evaluate model outputs and iterate on prompts and guardrails. You will work in a small team and ship weekly. Experience with python and prompt engineering is expected.",
+  "skills": [
+   "python",
+   "prompt engineering",
+   "vector databases",
+   "llm",
+   "rag"
+  ],
+  "posted_at": "2026-11-12T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-002"
+ },
+ {
+  "id": "job-003",
+  "title": "Generative AI Engineer",
+  "company": "Kestrel AI",
+  "location": "Mumbai",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Own semantic retrieval, prompt design and structured-output validation for our generative AI features. We value ownership and clear writing. Experience with rag and embeddings is expected.",
+  "skills": [
+   "rag",
+   "embeddings",
+   "llm",
+   "python"
+  ],
+  "posted_at": "2026-11-03T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-003"
+ },
+ {
+  "id": "job-004",
+  "title": "AI Agents Engineer",
+  "company": "Fathom Data",
+  "location": "Pune",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Own semantic retrieval, prompt design and structured-output validation for our generative AI features. You will talk to users and own outcomes. Experience with prompt engineering and python is expected.",
+  "skills": [
+   "prompt engineering",
+   "python",
+   "vector databases",
+   "llm"
+  ],
+  "posted_at": "2026-11-03T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-004"
+ },
+ {
+  "id": "job-005",
+  "title": "AI Agents Engineer",
+  "company": "Quill Systems",
+  "location": "Mumbai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Build chat assistants and retrieval-augmented generation pipelines on top of large language models. You will work in a small team and ship weekly. Experience with python and prompt engineering is expected.",
+  "skills": [
+   "python",
+   "prompt engineering",
+   "rag",
+   "embeddings"
+  ],
+  "posted_at": "2026-10-25T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-005"
+ },
+ {
+  "id": "job-006",
+  "title": "Applied AI Engineer",
+  "company": "Fathom Data",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Design tool-using AI agents, evaluate model outputs and iterate on prompts and guardrails. You will talk to users and own outcomes. Experience with embeddings and vector databases is expected.",
+  "skills": [
+   "embeddings",
+   "vector databases",
+   "python",
+   "prompt engineering"
+  ],
+  "posted_at": "2026-10-20T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-006"
+ },
+ {
+  "id": "job-007",
+  "title": "Applied AI Engineer",
+  "company": "Mosaic Learn",
+  "location": "Mumbai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Own semantic retrieval, prompt design and structured-output validation for our generative AI features. You will talk to users and own outcomes. Experience with rag and embeddings is expected.",
+  "skills": [
+   "rag",
+   "embeddings",
+   "python",
+   "prompt engineering"
+  ],
+  "posted_at": "2026-11-08T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-007"
+ },
+ {
+  "id": "job-008",
+  "title": "LLM Engineer",
+  "company": "Lumen Health",
+  "location": "Hyderabad",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Build chat assistants and retrieval-augmented generation pipelines on top of large language models. We value ownership and clear writing. Experience with python and embeddings is expected.",
+  "skills": [
+   "python",
+   "embeddings",
+   "rag",
+   "llm",
+   "prompt engineering"
+  ],
+  "posted_at": "2026-11-01T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-008"
+ },
+ {
+  "id": "job-009",
+  "title": "AI Agents Engineer",
+  "company": "Alder & Co",
+  "location": "Hyderabad",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Own semantic retrieval, prompt design and structured-output validation for our generative AI features. You will talk to users and own outcomes. Experience with llm and embeddings is expected.",
+  "skills": [
+   "llm",
+   "embeddings",
+   "fastapi",
+   "rag"
+  ],
+  "posted_at": "2026-11-04T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-009"
+ },
+ {
+  "id": "job-010",
+  "title": "Generative AI Engineer",
+  "company": "Nimbus Labs",
+  "location": "Pune",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Own semantic retrieval, prompt design and structured-output validation for our generative AI features. We value ownership and clear writing. Experience with llm and python is expected.",
+  "skills": [
+   "llm",
+   "python",
+   "vector databases",
+   "prompt engineering"
+  ],
+  "posted_at": "2026-11-10T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-010"
+ },
+ {
+  "id": "job-011",
+  "title": "LLM Engineer",
+  "company": "Zephyr Cloud",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Own semantic retrieval, prompt design and structured-output validation for our generative AI features. You will talk to users and own outcomes. Experience with prompt engineering and vector databases is expected.",
+  "skills": [
+   "prompt engineering",
+   "vector databases",
+   "rag",
+   "llm",
+   "fastapi"
+  ],
+  "posted_at": "2026-11-01T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-011"
+ },
+ {
+  "id": "job-012",
+  "title": "Applied AI Engineer",
+  "company": "Cobalt Mobility",
+  "location": "Bengaluru",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Build chat assistants and retrieval-augmented generation pipelines on top of large language models. You will work in a small team and ship weekly. Experience with python and llm is expected.",
+  "skills": [
+   "python",
+   "llm",
+   "vector databases",
+   "fastapi",
+   "embeddings"
+  ],
+  "posted_at": "2026-10-21T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-012"
+ },
+ {
+  "id": "job-013",
+  "title": "Software Engineer, Platform",
+  "company": "Orbit Pay",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Design reliable backend systems with caching, queues and clean database schemas. Mentorship from senior engineers is part of the role. Experience with postgresql and docker is expected.",
+  "skills": [
+   "postgresql",
+   "docker",
+   "python",
+   "rest apis"
+  ],
+  "posted_at": "2026-10-19T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-013"
+ },
+ {
+  "id": "job-014",
+  "title": "API Engineer",
+  "company": "Tidewater",
+  "location": "Hyderabad",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Design reliable backend systems with caching, queues and clean database schemas. We value ownership and clear writing. Experience with redis and sql is expected.",
+  "skills": [
+   "redis",
+   "sql",
+   "rest apis",
+   "postgresql",
+   "python"
+  ],
+  "posted_at": "2026-10-24T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-014"
+ },
+ {
+  "id": "job-015",
+  "title": "Backend Engineer",
+  "company": "Tidewater",
+  "location": "Hyderabad",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Ship production API endpoints, monitor them and keep latency low under load. Mentorship from senior engineers is part of the role. Experience with fastapi and rest apis is expected.",
+  "skills": [
+   "fastapi",
+   "rest apis",
+   "docker",
+   "python",
+   "postgresql"
+  ],
+  "posted_at": "2026-09-29T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-015"
+ },
+ {
+  "id": "job-016",
+  "title": "Python Backend Developer",
+  "company": "Lumen Health",
+  "location": "Pune",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Ship production API endpoints, monitor them and keep latency low under load. We value ownership and clear writing. Experience with docker and sql is expected.",
+  "skills": [
+   "docker",
+   "sql",
+   "rest apis",
+   "postgresql"
+  ],
+  "posted_at": "2026-11-14T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-016"
+ },
+ {
+  "id": "job-017",
+  "title": "API Engineer",
+  "company": "Zephyr Cloud",
+  "location": "Chennai",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Design reliable backend systems with caching, queues and clean database schemas. Mentorship from senior engineers is part of the role. Experience with python and postgresql is expected.",
+  "skills": [
+   "python",
+   "postgresql",
+   "redis",
+   "rest apis"
+  ],
+  "posted_at": "2026-11-21T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-017"
+ },
+ {
+  "id": "job-018",
+  "title": "Backend Engineer",
+  "company": "Zephyr Cloud",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Design reliable backend systems with caching, queues and clean database schemas. You will work in a small team and ship weekly. Experience with redis and fastapi is expected.",
+  "skills": [
+   "redis",
+   "fastapi",
+   "postgresql",
+   "rest apis"
+  ],
+  "posted_at": "2026-10-04T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-018"
+ },
+ {
+  "id": "job-019",
+  "title": "Software Engineer, Platform",
+  "company": "Zephyr Cloud",
+  "location": "Pune",
+  "remote": true,
+  "job_type": "contract",
+  "seniority": "mid",
+  "description": "Ship production API endpoints, monitor them and keep latency low under load. You will work in a small team and ship weekly. Experience with redis and fastapi is expected.",
+  "skills": [
+   "redis",
+   "fastapi",
+   "sql",
+   "postgresql"
+  ],
+  "posted_at": "2026-10-11T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-019"
+ },
+ {
+  "id": "job-020",
+  "title": "Python Backend Developer",
+  "company": "Cobalt Mobility",
+  "location": "Mumbai",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Design reliable backend systems with caching, queues and clean database schemas. Mentorship from senior engineers is part of the role. Experience with python and fastapi is expected.",
+  "skills": [
+   "python",
+   "fastapi",
+   "docker",
+   "redis"
+  ],
+  "posted_at": "2026-11-17T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-020"
+ },
+ {
+  "id": "job-021",
+  "title": "Python Backend Developer",
+  "company": "Lumen Health",
+  "location": "Bengaluru",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Design reliable backend systems with caching, queues and clean database schemas. We value ownership and clear writing. Experience with sql and rest apis is expected.",
+  "skills": [
+   "sql",
+   "rest apis",
+   "python",
+   "fastapi"
+  ],
+  "posted_at": "2026-11-08T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-021"
+ },
+ {
+  "id": "job-022",
+  "title": "API Engineer",
+  "company": "Zephyr Cloud",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Ship production API endpoints, monitor them and keep latency low under load. You will talk to users and own outcomes. Experience with postgresql and docker is expected.",
+  "skills": [
+   "postgresql",
+   "docker",
+   "redis",
+   "fastapi",
+   "python"
+  ],
+  "posted_at": "2026-10-05T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-022"
+ },
+ {
+  "id": "job-023",
+  "title": "Backend Engineer",
+  "company": "Orbit Pay",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "senior",
+  "description": "Build and scale Python services and REST APIs that power our product. You will talk to users and own outcomes. Experience with docker and sql is expected.",
+  "skills": [
+   "docker",
+   "sql",
+   "python",
+   "redis"
+  ],
+  "posted_at": "2026-10-18T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-023"
+ },
+ {
+  "id": "job-024",
+  "title": "Backend Engineer",
+  "company": "Lumen Health",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Design reliable backend systems with caching, queues and clean database schemas. You will work in a small team and ship weekly. Experience with rest apis and docker is expected.",
+  "skills": [
+   "rest apis",
+   "docker",
+   "sql",
+   "redis",
+   "python"
+  ],
+  "posted_at": "2026-10-08T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-024"
+ },
+ {
+  "id": "job-025",
+  "title": "Java Backend Engineer",
+  "company": "Tidewater",
+  "location": "Hyderabad",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Build event-driven Java services on Kafka with strong consistency guarantees. You will talk to users and own outcomes. Experience with microservices and java is expected.",
+  "skills": [
+   "microservices",
+   "java",
+   "docker",
+   "spring boot",
+   "postgresql"
+  ],
+  "posted_at": "2026-10-25T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-025"
+ },
+ {
+  "id": "job-026",
+  "title": "Software Engineer, Services",
+  "company": "Fathom Data",
+  "location": "Bengaluru",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "senior",
+  "description": "Develop Spring Boot microservices that process high volumes of transactions. You will talk to users and own outcomes. Experience with microservices and spring boot is expected.",
+  "skills": [
+   "microservices",
+   "spring boot",
+   "kafka",
+   "java",
+   "docker"
+  ],
+  "posted_at": "2026-11-22T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-026"
+ },
+ {
+  "id": "job-027",
+  "title": "Software Engineer, Services",
+  "company": "Lumen Health",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Develop Spring Boot microservices that process high volumes of transactions. You will talk to users and own outcomes. Experience with java and spring boot is expected.",
+  "skills": [
+   "java",
+   "spring boot",
+   "postgresql",
+   "docker",
+   "microservices"
+  ],
+  "posted_at": "2026-10-01T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-027"
+ },
+ {
+  "id": "job-028",
+  "title": "Software Engineer, Services",
+  "company": "Fathom Data",
+  "location": "Bengaluru",
+  "remote": false,
+  "job_type": "contract",
+  "seniority": "junior",
+  "description": "Build event-driven Java services on Kafka with strong consistency guarantees. You will work in a small team and ship weekly. Experience with spring boot and kafka is expected.",
+  "skills": [
+   "spring boot",
+   "kafka",
+   "microservices",
+   "docker"
+  ],
+  "posted_at": "2026-11-05T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-028"
+ },
+ {
+  "id": "job-029",
+  "title": "Java Backend Engineer",
+  "company": "Lumen Health",
+  "location": "Bengaluru",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Develop Spring Boot microservices that process high volumes of transactions. Mentorship from senior engineers is part of the role. Experience with kafka and postgresql is expected.",
+  "skills": [
+   "kafka",
+   "postgresql",
+   "microservices",
+   "docker"
+  ],
+  "posted_at": "2026-11-09T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-029"
+ },
+ {
+  "id": "job-030",
+  "title": "Software Engineer, Services",
+  "company": "Brightpath",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Build event-driven Java services on Kafka with strong consistency guarantees. Mentorship from senior engineers is part of the role. Experience with postgresql and spring boot is expected.",
+  "skills": [
+   "postgresql",
+   "spring boot",
+   "kafka",
+   "docker"
+  ],
+  "posted_at": "2026-11-21T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-030"
+ },
+ {
+  "id": "job-031",
+  "title": "Software Engineer, Services",
+  "company": "Kestrel AI",
+  "location": "Mumbai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Develop Spring Boot microservices that process high volumes of transactions. You will work in a small team and ship weekly. Experience with kafka and java is expected.",
+  "skills": [
+   "kafka",
+   "java",
+   "postgresql",
+   "microservices"
+  ],
+  "posted_at": "2026-11-10T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-031"
+ },
+ {
+  "id": "job-032",
+  "title": "Java Backend Engineer",
+  "company": "Kestrel AI",
+  "location": "Gurugram",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "senior",
+  "description": "Build event-driven Java services on Kafka with strong consistency guarantees. You will work in a small team and ship weekly. Experience with microservices and kafka is expected.",
+  "skills": [
+   "microservices",
+   "kafka",
+   "postgresql",
+   "docker",
+   "java"
+  ],
+  "posted_at": "2026-11-15T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-032"
+ },
+ {
+  "id": "job-033",
+  "title": "Java Backend Engineer",
+  "company": "Quill Systems",
+  "location": "Hyderabad",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Develop Spring Boot microservices that process high volumes of transactions. Mentorship from senior engineers is part of the role. Experience with docker and postgresql is expected.",
+  "skills": [
+   "docker",
+   "postgresql",
+   "spring boot",
+   "kafka",
+   "microservices"
+  ],
+  "posted_at": "2026-11-24T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-033"
+ },
+ {
+  "id": "job-034",
+  "title": "Software Engineer, Services",
+  "company": "Mosaic Learn",
+  "location": "Pune",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Build event-driven Java services on Kafka with strong consistency guarantees. Mentorship from senior engineers is part of the role. Experience with microservices and kafka is expected.",
+  "skills": [
+   "microservices",
+   "kafka",
+   "spring boot",
+   "docker"
+  ],
+  "posted_at": "2026-10-13T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-034"
+ },
+ {
+  "id": "job-035",
+  "title": "Java Backend Engineer",
+  "company": "Orbit Pay",
+  "location": "Bengaluru",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Develop Spring Boot microservices that process high volumes of transactions. Mentorship from senior engineers is part of the role. Experience with postgresql and spring boot is expected.",
+  "skills": [
+   "postgresql",
+   "spring boot",
+   "microservices",
+   "kafka"
+  ],
+  "posted_at": "2026-10-30T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-035"
+ },
+ {
+  "id": "job-036",
+  "title": "Software Engineer, Services",
+  "company": "Nimbus Labs",
+  "location": "Pune",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Develop Spring Boot microservices that process high volumes of transactions. We value ownership and clear writing. Experience with docker and kafka is expected.",
+  "skills": [
+   "docker",
+   "kafka",
+   "postgresql",
+   "microservices"
+  ],
+  "posted_at": "2026-11-09T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-036"
+ },
+ {
+  "id": "job-037",
+  "title": "Data Engineer",
+  "company": "Nimbus Labs",
+  "location": "Hyderabad",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Model data with dbt, orchestrate workflows in Airflow and own data quality checks. You will work in a small team and ship weekly. Experience with dbt and airflow is expected.",
+  "skills": [
+   "dbt",
+   "airflow",
+   "sql",
+   "python",
+   "spark"
+  ],
+  "posted_at": "2026-10-27T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-037"
+ },
+ {
+  "id": "job-038",
+  "title": "Data Engineer",
+  "company": "Brightpath",
+  "location": "Mumbai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Build batch and streaming data pipelines and keep the warehouse trustworthy. You will talk to users and own outcomes. Experience with dbt and python is expected.",
+  "skills": [
+   "dbt",
+   "python",
+   "aws",
+   "sql"
+  ],
+  "posted_at": "2026-11-25T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-038"
+ },
+ {
+  "id": "job-039",
+  "title": "ETL Developer",
+  "company": "Brightpath",
+  "location": "Hyderabad",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Model data with dbt, orchestrate workflows in Airflow and own data quality checks. We value ownership and clear writing. Experience with dbt and aws is expected.",
+  "skills": [
+   "dbt",
+   "aws",
+   "sql",
+   "airflow"
+  ],
+  "posted_at": "2026-11-08T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-039"
+ },
+ {
+  "id": "job-040",
+  "title": "ETL Developer",
+  "company": "Orbit Pay",
+  "location": "Mumbai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Build batch and streaming data pipelines and keep the warehouse trustworthy. We value ownership and clear writing. Experience with aws and dbt is expected.",
+  "skills": [
+   "aws",
+   "dbt",
+   "spark",
+   "airflow"
+  ],
+  "posted_at": "2026-11-21T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-040"
+ },
+ {
+  "id": "job-041",
+  "title": "ETL Developer",
+  "company": "Nimbus Labs",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Build batch and streaming data pipelines and keep the warehouse trustworthy. We value ownership and clear writing. Experience with aws and airflow is expected.",
+  "skills": [
+   "aws",
+   "airflow",
+   "python",
+   "sql"
+  ],
+  "posted_at": "2026-10-26T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-041"
+ },
+ {
+  "id": "job-042",
+  "title": "ETL Developer",
+  "company": "Tidewater",
+  "location": "Pune",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Model data with dbt, orchestrate workflows in Airflow and own data quality checks. You will work in a small team and ship weekly. Experience with aws and dbt is expected.",
+  "skills": [
+   "aws",
+   "dbt",
+   "python",
+   "airflow"
+  ],
+  "posted_at": "2026-10-03T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-042"
+ },
+ {
+  "id": "job-043",
+  "title": "ETL Developer",
+  "company": "Quill Systems",
+  "location": "Bengaluru",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Build batch and streaming data pipelines and keep the warehouse trustworthy. You will work in a small team and ship weekly. Experience with sql and spark is expected.",
+  "skills": [
+   "sql",
+   "spark",
+   "dbt",
+   "aws"
+  ],
+  "posted_at": "2026-10-19T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-043"
+ },
+ {
+  "id": "job-044",
+  "title": "Analytics Engineer",
+  "company": "Mosaic Learn",
+  "location": "Bengaluru",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Build batch and streaming data pipelines and keep the warehouse trustworthy. You will talk to users and own outcomes. Experience with aws and airflow is expected.",
+  "skills": [
+   "aws",
+   "airflow",
+   "sql",
+   "python",
+   "spark"
+  ],
+  "posted_at": "2026-11-08T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-044"
+ },
+ {
+  "id": "job-045",
+  "title": "Data Engineer",
+  "company": "Quill Systems",
+  "location": "Pune",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Build batch and streaming data pipelines and keep the warehouse trustworthy. You will talk to users and own outcomes. Experience with spark and python is expected.",
+  "skills": [
+   "spark",
+   "python",
+   "sql",
+   "aws",
+   "dbt"
+  ],
+  "posted_at": "2026-11-09T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-045"
+ },
+ {
+  "id": "job-046",
+  "title": "Analytics Engineer",
+  "company": "Fathom Data",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "contract",
+  "seniority": "junior",
+  "description": "Model data with dbt, orchestrate workflows in Airflow and own data quality checks. You will work in a small team and ship weekly. Experience with python and dbt is expected.",
+  "skills": [
+   "python",
+   "dbt",
+   "aws",
+   "spark"
+  ],
+  "posted_at": "2026-10-12T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-046"
+ },
+ {
+  "id": "job-047",
+  "title": "Analytics Engineer",
+  "company": "Quill Systems",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Build batch and streaming data pipelines and keep the warehouse trustworthy. You will talk to users and own outcomes. Experience with spark and python is expected.",
+  "skills": [
+   "spark",
+   "python",
+   "sql",
+   "dbt",
+   "aws"
+  ],
+  "posted_at": "2026-11-04T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-047"
+ },
+ {
+  "id": "job-048",
+  "title": "Data Engineer",
+  "company": "Tidewater",
+  "location": "Bengaluru",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Model data with dbt, orchestrate workflows in Airflow and own data quality checks. Mentorship from senior engineers is part of the role. Experience with python and airflow is expected.",
+  "skills": [
+   "python",
+   "airflow",
+   "dbt",
+   "sql",
+   "aws"
+  ],
+  "posted_at": "2026-11-03T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-048"
+ },
+ {
+  "id": "job-049",
+  "title": "Applied Scientist",
+  "company": "Kestrel AI",
+  "location": "Bengaluru",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Build training pipelines and model serving infrastructure, and monitor model drift. We value ownership and clear writing. Experience with docker and python is expected.",
+  "skills": [
+   "docker",
+   "python",
+   "scikit-learn",
+   "pytorch",
+   "mlops"
+  ],
+  "posted_at": "2026-11-11T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-049"
+ },
+ {
+  "id": "job-050",
+  "title": "ML Platform Engineer",
+  "company": "Alder & Co",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "senior",
+  "description": "Train, evaluate and deploy machine learning models for production use cases. You will work in a small team and ship weekly. Experience with pytorch and scikit-learn is expected.",
+  "skills": [
+   "pytorch",
+   "scikit-learn",
+   "mlops",
+   "python",
+   "aws"
+  ],
+  "posted_at": "2026-09-28T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-050"
+ },
+ {
+  "id": "job-051",
+  "title": "ML Platform Engineer",
+  "company": "Orbit Pay",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Build training pipelines and model serving infrastructure, and monitor model drift. You will talk to users and own outcomes. Experience with aws and scikit-learn is expected.",
+  "skills": [
+   "aws",
+   "scikit-learn",
+   "mlops",
+   "python"
+  ],
+  "posted_at": "2026-11-05T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-051"
+ },
+ {
+  "id": "job-052",
+  "title": "ML Platform Engineer",
+  "company": "Orbit Pay",
+  "location": "Bengaluru",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Train, evaluate and deploy machine learning models for production use cases. You will talk to users and own outcomes. Experience with mlops and pytorch is expected.",
+  "skills": [
+   "mlops",
+   "pytorch",
+   "scikit-learn",
+   "docker",
+   "aws"
+  ],
+  "posted_at": "2026-10-22T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-052"
+ },
+ {
+  "id": "job-053",
+  "title": "Machine Learning Engineer",
+  "company": "Fathom Data",
+  "location": "Mumbai",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Train, evaluate and deploy machine learning models for production use cases. Mentorship from senior engineers is part of the role. Experience with mlops and aws is expected.",
+  "skills": [
+   "mlops",
+   "aws",
+   "pytorch",
+   "scikit-learn",
+   "python"
+  ],
+  "posted_at": "2026-11-11T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-053"
+ },
+ {
+  "id": "job-054",
+  "title": "Machine Learning Engineer",
+  "company": "Brightpath",
+  "location": "Hyderabad",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Build training pipelines and model serving infrastructure, and monitor model drift. You will work in a small team and ship weekly. Experience with python and mlops is expected.",
+  "skills": [
+   "python",
+   "mlops",
+   "docker",
+   "pytorch"
+  ],
+  "posted_at": "2026-10-26T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-054"
+ },
+ {
+  "id": "job-055",
+  "title": "Machine Learning Engineer",
+  "company": "Brightpath",
+  "location": "Pune",
+  "remote": true,
+  "job_type": "contract",
+  "seniority": "junior",
+  "description": "Build training pipelines and model serving infrastructure, and monitor model drift. You will talk to users and own outcomes. Experience with aws and docker is expected.",
+  "skills": [
+   "aws",
+   "docker",
+   "pytorch",
+   "python"
+  ],
+  "posted_at": "2026-11-07T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-055"
+ },
+ {
+  "id": "job-056",
+  "title": "Applied Scientist",
+  "company": "Cobalt Mobility",
+  "location": "Pune",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "senior",
+  "description": "Train, evaluate and deploy machine learning models for production use cases. You will work in a small team and ship weekly. Experience with pytorch and python is expected.",
+  "skills": [
+   "pytorch",
+   "python",
+   "mlops",
+   "scikit-learn"
+  ],
+  "posted_at": "2026-11-01T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-056"
+ },
+ {
+  "id": "job-057",
+  "title": "ML Platform Engineer",
+  "company": "Kestrel AI",
+  "location": "Chennai",
+  "remote": true,
+  "job_type": "contract",
+  "seniority": "senior",
+  "description": "Build training pipelines and model serving infrastructure, and monitor model drift. You will work in a small team and ship weekly. Experience with mlops and pytorch is expected.",
+  "skills": [
+   "mlops",
+   "pytorch",
+   "python",
+   "aws",
+   "scikit-learn"
+  ],
+  "posted_at": "2026-10-22T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-057"
+ },
+ {
+  "id": "job-058",
+  "title": "Machine Learning Engineer",
+  "company": "Mosaic Learn",
+  "location": "Hyderabad",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Build training pipelines and model serving infrastructure, and monitor model drift. You will work in a small team and ship weekly. Experience with pytorch and docker is expected.",
+  "skills": [
+   "pytorch",
+   "docker",
+   "python",
+   "scikit-learn"
+  ],
+  "posted_at": "2026-11-20T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-058"
+ },
+ {
+  "id": "job-059",
+  "title": "ML Platform Engineer",
+  "company": "Quill Systems",
+  "location": "Pune",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Build training pipelines and model serving infrastructure, and monitor model drift. Mentorship from senior engineers is part of the role. Experience with mlops and scikit-learn is expected.",
+  "skills": [
+   "mlops",
+   "scikit-learn",
+   "pytorch",
+   "docker"
+  ],
+  "posted_at": "2026-10-16T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-059"
+ },
+ {
+  "id": "job-060",
+  "title": "Applied Scientist",
+  "company": "Nimbus Labs",
+  "location": "Bengaluru",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "senior",
+  "description": "Train, evaluate and deploy machine learning models for production use cases. You will talk to users and own outcomes. Experience with docker and pytorch is expected.",
+  "skills": [
+   "docker",
+   "pytorch",
+   "python",
+   "aws"
+  ],
+  "posted_at": "2026-10-01T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-060"
+ },
+ {
+  "id": "job-061",
+  "title": "Recommendations Engineer",
+  "company": "Tidewater",
+  "location": "Pune",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Build recommendation systems, run offline metrics and A/B tests to measure impact. You will talk to users and own outcomes. Experience with elasticsearch and ranking is expected.",
+  "skills": [
+   "elasticsearch",
+   "ranking",
+   "embeddings",
+   "python",
+   "sql"
+  ],
+  "posted_at": "2026-11-14T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-061"
+ },
+ {
+  "id": "job-062",
+  "title": "Recommendations Engineer",
+  "company": "Lumen Health",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Build recommendation systems, run offline metrics and A/B tests to measure impact. We value ownership and clear writing. Experience with sql and recommender systems is expected.",
+  "skills": [
+   "sql",
+   "recommender systems",
+   "python",
+   "ranking",
+   "elasticsearch"
+  ],
+  "posted_at": "2026-11-10T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-062"
+ },
+ {
+  "id": "job-063",
+  "title": "Search Engineer",
+  "company": "Cobalt Mobility",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Build recommendation systems, run offline metrics and A/B tests to measure impact. You will work in a small team and ship weekly. Experience with recommender systems and elasticsearch is expected.",
+  "skills": [
+   "recommender systems",
+   "elasticsearch",
+   "sql",
+   "ranking",
+   "embeddings"
+  ],
+  "posted_at": "2026-11-13T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-063"
+ },
+ {
+  "id": "job-064",
+  "title": "Relevance Engineer",
+  "company": "Fathom Data",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Improve search relevance and ranking with learning-to-rank and embedding retrieval. You will work in a small team and ship weekly. Experience with ranking and python is expected.",
+  "skills": [
+   "ranking",
+   "python",
+   "recommender systems",
+   "sql"
+  ],
+  "posted_at": "2026-09-28T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-064"
+ },
+ {
+  "id": "job-065",
+  "title": "Relevance Engineer",
+  "company": "Brightpath",
+  "location": "Hyderabad",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Build recommendation systems, run offline metrics and A/B tests to measure impact. You will talk to users and own outcomes. Experience with elasticsearch and recommender systems is expected.",
+  "skills": [
+   "elasticsearch",
+   "recommender systems",
+   "ranking",
+   "python"
+  ],
+  "posted_at": "2026-11-16T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-065"
+ },
+ {
+  "id": "job-066",
+  "title": "Search Engineer",
+  "company": "Alder & Co",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Build recommendation systems, run offline metrics and A/B tests to measure impact. Mentorship from senior engineers is part of the role. Experience with embeddings and python is expected.",
+  "skills": [
+   "embeddings",
+   "python",
+   "sql",
+   "elasticsearch"
+  ],
+  "posted_at": "2026-10-08T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-066"
+ },
+ {
+  "id": "job-067",
+  "title": "Recommendations Engineer",
+  "company": "Lumen Health",
+  "location": "Hyderabad",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Build recommendation systems, run offline metrics and A/B tests to measure impact. You will talk to users and own outcomes. Experience with python and sql is expected.",
+  "skills": [
+   "python",
+   "sql",
+   "ranking",
+   "recommender systems",
+   "elasticsearch"
+  ],
+  "posted_at": "2026-11-25T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-067"
+ },
+ {
+  "id": "job-068",
+  "title": "Search Engineer",
+  "company": "Quill Systems",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Improve search relevance and ranking with learning-to-rank and embedding retrieval. Mentorship from senior engineers is part of the role. Experience with python and ranking is expected.",
+  "skills": [
+   "python",
+   "ranking",
+   "sql",
+   "elasticsearch",
+   "recommender systems"
+  ],
+  "posted_at": "2026-11-03T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-068"
+ },
+ {
+  "id": "job-069",
+  "title": "Relevance Engineer",
+  "company": "Mosaic Learn",
+  "location": "Bengaluru",
+  "remote": true,
+  "job_type": "contract",
+  "seniority": "junior",
+  "description": "Improve search relevance and ranking with learning-to-rank and embedding retrieval. We value ownership and clear writing. Experience with embeddings and sql is expected.",
+  "skills": [
+   "embeddings",
+   "sql",
+   "recommender systems",
+   "elasticsearch"
+  ],
+  "posted_at": "2026-11-20T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-069"
+ },
+ {
+  "id": "job-070",
+  "title": "Relevance Engineer",
+  "company": "Quill Systems",
+  "location": "Chennai",
+  "remote": true,
+  "job_type": "contract",
+  "seniority": "junior",
+  "description": "Improve search relevance and ranking with learning-to-rank and embedding retrieval. We value ownership and clear writing. Experience with embeddings and ranking is expected.",
+  "skills": [
+   "embeddings",
+   "ranking",
+   "recommender systems",
+   "python",
+   "elasticsearch"
+  ],
+  "posted_at": "2026-11-06T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-070"
+ },
+ {
+  "id": "job-071",
+  "title": "Search Engineer",
+  "company": "Mosaic Learn",
+  "location": "Bengaluru",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "senior",
+  "description": "Build recommendation systems, run offline metrics and A/B tests to measure impact. Mentorship from senior engineers is part of the role. Experience with recommender systems and elasticsearch is expected.",
+  "skills": [
+   "recommender systems",
+   "elasticsearch",
+   "ranking",
+   "python"
+  ],
+  "posted_at": "2026-11-16T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-071"
+ },
+ {
+  "id": "job-072",
+  "title": "Recommendations Engineer",
+  "company": "Tidewater",
+  "location": "Pune",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "senior",
+  "description": "Improve search relevance and ranking with learning-to-rank and embedding retrieval. We value ownership and clear writing. Experience with embeddings and recommender systems is expected.",
+  "skills": [
+   "embeddings",
+   "recommender systems",
+   "python",
+   "ranking"
+  ],
+  "posted_at": "2026-11-18T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-072"
+ },
+ {
+  "id": "job-073",
+  "title": "React Developer",
+  "company": "Fathom Data",
+  "location": "Hyderabad",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Turn designs into polished components and improve web performance. We value ownership and clear writing. Experience with html and react is expected.",
+  "skills": [
+   "html",
+   "react",
+   "typescript",
+   "javascript"
+  ],
+  "posted_at": "2026-10-29T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-073"
+ },
+ {
+  "id": "job-074",
+  "title": "React Developer",
+  "company": "Quill Systems",
+  "location": "Gurugram",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Build fast, accessible user interfaces in React and TypeScript. You will work in a small team and ship weekly. Experience with typescript and html is expected.",
+  "skills": [
+   "typescript",
+   "html",
+   "css",
+   "react"
+  ],
+  "posted_at": "2026-10-16T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-074"
+ },
+ {
+  "id": "job-075",
+  "title": "React Developer",
+  "company": "Lumen Health",
+  "location": "Bengaluru",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Build fast, accessible user interfaces in React and TypeScript. We value ownership and clear writing. Experience with css and typescript is expected.",
+  "skills": [
+   "css",
+   "typescript",
+   "html",
+   "javascript"
+  ],
+  "posted_at": "2026-10-19T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-075"
+ },
+ {
+  "id": "job-076",
+  "title": "UI Engineer",
+  "company": "Nimbus Labs",
+  "location": "Bengaluru",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "senior",
+  "description": "Turn designs into polished components and improve web performance. We value ownership and clear writing. Experience with javascript and typescript is expected.",
+  "skills": [
+   "javascript",
+   "typescript",
+   "css",
+   "html"
+  ],
+  "posted_at": "2026-11-24T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-076"
+ },
+ {
+  "id": "job-077",
+  "title": "React Developer",
+  "company": "Brightpath",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Turn designs into polished components and improve web performance. We value ownership and clear writing. Experience with javascript and react is expected.",
+  "skills": [
+   "javascript",
+   "react",
+   "html",
+   "css"
+  ],
+  "posted_at": "2026-10-18T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-077"
+ },
+ {
+  "id": "job-078",
+  "title": "UI Engineer",
+  "company": "Alder & Co",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Build fast, accessible user interfaces in React and TypeScript. We value ownership and clear writing. Experience with html and css is expected.",
+  "skills": [
+   "html",
+   "css",
+   "react",
+   "typescript",
+   "javascript"
+  ],
+  "posted_at": "2026-11-01T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-078"
+ },
+ {
+  "id": "job-079",
+  "title": "Frontend Engineer",
+  "company": "Fathom Data",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Build fast, accessible user interfaces in React and TypeScript. You will talk to users and own outcomes. Experience with javascript and css is expected.",
+  "skills": [
+   "javascript",
+   "css",
+   "react",
+   "typescript",
+   "html"
+  ],
+  "posted_at": "2026-10-11T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-079"
+ },
+ {
+  "id": "job-080",
+  "title": "React Developer",
+  "company": "Zephyr Cloud",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "contract",
+  "seniority": "junior",
+  "description": "Build fast, accessible user interfaces in React and TypeScript. You will work in a small team and ship weekly. Experience with typescript and css is expected.",
+  "skills": [
+   "typescript",
+   "css",
+   "react",
+   "javascript",
+   "html"
+  ],
+  "posted_at": "2026-11-23T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-080"
+ },
+ {
+  "id": "job-081",
+  "title": "Frontend Engineer",
+  "company": "Alder & Co",
+  "location": "Gurugram",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Build fast, accessible user interfaces in React and TypeScript. You will work in a small team and ship weekly. Experience with react and javascript is expected.",
+  "skills": [
+   "react",
+   "javascript",
+   "css",
+   "html",
+   "typescript"
+  ],
+  "posted_at": "2026-11-02T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-081"
+ },
+ {
+  "id": "job-082",
+  "title": "UI Engineer",
+  "company": "Mosaic Learn",
+  "location": "Pune",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Build fast, accessible user interfaces in React and TypeScript. We value ownership and clear writing. Experience with javascript and typescript is expected.",
+  "skills": [
+   "javascript",
+   "typescript",
+   "react",
+   "css"
+  ],
+  "posted_at": "2026-10-17T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-082"
+ },
+ {
+  "id": "job-083",
+  "title": "UI Engineer",
+  "company": "Orbit Pay",
+  "location": "Pune",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Turn designs into polished components and improve web performance. You will work in a small team and ship weekly. Experience with html and typescript is expected.",
+  "skills": [
+   "html",
+   "typescript",
+   "css",
+   "react",
+   "javascript"
+  ],
+  "posted_at": "2026-11-17T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-083"
+ },
+ {
+  "id": "job-084",
+  "title": "UI Engineer",
+  "company": "Zephyr Cloud",
+  "location": "Mumbai",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Turn designs into polished components and improve web performance. You will talk to users and own outcomes. Experience with react and html is expected.",
+  "skills": [
+   "react",
+   "html",
+   "javascript",
+   "typescript"
+  ],
+  "posted_at": "2026-11-07T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-084"
+ },
+ {
+  "id": "job-085",
+  "title": "Software Engineer, Web",
+  "company": "Zephyr Cloud",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Build web applications from database schema to user interface. You will talk to users and own outcomes. Experience with postgresql and rest apis is expected.",
+  "skills": [
+   "postgresql",
+   "rest apis",
+   "react",
+   "typescript",
+   "node.js"
+  ],
+  "posted_at": "2026-10-04T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-085"
+ },
+ {
+  "id": "job-086",
+  "title": "Full Stack Engineer",
+  "company": "Zephyr Cloud",
+  "location": "Mumbai",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Own features end to end across a React frontend and a Node.js backend. You will work in a small team and ship weekly. Experience with postgresql and react is expected.",
+  "skills": [
+   "postgresql",
+   "react",
+   "rest apis",
+   "typescript",
+   "node.js"
+  ],
+  "posted_at": "2026-10-17T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-086"
+ },
+ {
+  "id": "job-087",
+  "title": "Full Stack Engineer",
+  "company": "Cobalt Mobility",
+  "location": "Chennai",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Own features end to end across a React frontend and a Node.js backend. We value ownership and clear writing. Experience with rest apis and react is expected.",
+  "skills": [
+   "rest apis",
+   "react",
+   "postgresql",
+   "node.js",
+   "typescript"
+  ],
+  "posted_at": "2026-11-18T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-087"
+ },
+ {
+  "id": "job-088",
+  "title": "Software Engineer, Web",
+  "company": "Zephyr Cloud",
+  "location": "Gurugram",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "senior",
+  "description": "Build web applications from database schema to user interface. You will talk to users and own outcomes. Experience with node.js and react is expected.",
+  "skills": [
+   "node.js",
+   "react",
+   "rest apis",
+   "typescript"
+  ],
+  "posted_at": "2026-11-13T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-088"
+ },
+ {
+  "id": "job-089",
+  "title": "Full Stack Engineer",
+  "company": "Mosaic Learn",
+  "location": "Hyderabad",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Build web applications from database schema to user interface. You will talk to users and own outcomes. Experience with typescript and rest apis is expected.",
+  "skills": [
+   "typescript",
+   "rest apis",
+   "react",
+   "postgresql"
+  ],
+  "posted_at": "2026-11-16T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-089"
+ },
+ {
+  "id": "job-090",
+  "title": "Software Engineer, Web",
+  "company": "Tidewater",
+  "location": "Hyderabad",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Build web applications from database schema to user interface. You will talk to users and own outcomes. Experience with typescript and postgresql is expected.",
+  "skills": [
+   "typescript",
+   "postgresql",
+   "rest apis",
+   "react"
+  ],
+  "posted_at": "2026-11-03T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-090"
+ },
+ {
+  "id": "job-091",
+  "title": "Software Engineer, Web",
+  "company": "Quill Systems",
+  "location": "Chennai",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Build web applications from database schema to user interface. You will work in a small team and ship weekly. Experience with postgresql and node.js is expected.",
+  "skills": [
+   "postgresql",
+   "node.js",
+   "react",
+   "typescript"
+  ],
+  "posted_at": "2026-10-10T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-091"
+ },
+ {
+  "id": "job-092",
+  "title": "Full Stack Engineer",
+  "company": "Zephyr Cloud",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Own features end to end across a React frontend and a Node.js backend. You will work in a small team and ship weekly. Experience with typescript and postgresql is expected.",
+  "skills": [
+   "typescript",
+   "postgresql",
+   "node.js",
+   "rest apis"
+  ],
+  "posted_at": "2026-11-23T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-092"
+ },
+ {
+  "id": "job-093",
+  "title": "Software Engineer, Web",
+  "company": "Cobalt Mobility",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Own features end to end across a React frontend and a Node.js backend. Mentorship from senior engineers is part of the role. Experience with typescript and react is expected.",
+  "skills": [
+   "typescript",
+   "react",
+   "rest apis",
+   "node.js",
+   "postgresql"
+  ],
+  "posted_at": "2026-10-18T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-093"
+ },
+ {
+  "id": "job-094",
+  "title": "Full Stack Engineer",
+  "company": "Mosaic Learn",
+  "location": "Hyderabad",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Build web applications from database schema to user interface. Mentorship from senior engineers is part of the role. Experience with node.js and rest apis is expected.",
+  "skills": [
+   "node.js",
+   "rest apis",
+   "postgresql",
+   "react"
+  ],
+  "posted_at": "2026-11-26T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-094"
+ },
+ {
+  "id": "job-095",
+  "title": "Full Stack Engineer",
+  "company": "Nimbus Labs",
+  "location": "Bengaluru",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Own features end to end across a React frontend and a Node.js backend. You will talk to users and own outcomes. Experience with rest apis and postgresql is expected.",
+  "skills": [
+   "rest apis",
+   "postgresql",
+   "typescript",
+   "node.js",
+   "react"
+  ],
+  "posted_at": "2026-11-15T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-095"
+ },
+ {
+  "id": "job-096",
+  "title": "Full Stack Engineer",
+  "company": "Alder & Co",
+  "location": "Mumbai",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Build web applications from database schema to user interface. We value ownership and clear writing. Experience with react and rest apis is expected.",
+  "skills": [
+   "react",
+   "rest apis",
+   "typescript",
+   "postgresql"
+  ],
+  "posted_at": "2026-10-25T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-096"
+ },
+ {
+  "id": "job-097",
+  "title": "Business Intelligence Analyst",
+  "company": "Kestrel AI",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Write SQL, build Power BI dashboards and present insights to stakeholders. We value ownership and clear writing. Experience with python and sql is expected.",
+  "skills": [
+   "python",
+   "sql",
+   "power bi",
+   "excel"
+  ],
+  "posted_at": "2026-11-12T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-097"
+ },
+ {
+  "id": "job-098",
+  "title": "Business Intelligence Analyst",
+  "company": "Mosaic Learn",
+  "location": "Mumbai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "senior",
+  "description": "Write SQL, build Power BI dashboards and present insights to stakeholders. Mentorship from senior engineers is part of the role. Experience with sql and excel is expected.",
+  "skills": [
+   "sql",
+   "excel",
+   "python",
+   "power bi"
+  ],
+  "posted_at": "2026-11-08T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-098"
+ },
+ {
+  "id": "job-099",
+  "title": "Data Analyst",
+  "company": "Orbit Pay",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "contract",
+  "seniority": "mid",
+  "description": "Write SQL, build Power BI dashboards and present insights to stakeholders. We value ownership and clear writing. Experience with sql and tableau is expected.",
+  "skills": [
+   "sql",
+   "tableau",
+   "python",
+   "power bi"
+  ],
+  "posted_at": "2026-10-01T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-099"
+ },
+ {
+  "id": "job-100",
+  "title": "Data Analyst",
+  "company": "Cobalt Mobility",
+  "location": "Hyderabad",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Turn raw data into dashboards and reports that guide business decisions. You will talk to users and own outcomes. Experience with tableau and python is expected.",
+  "skills": [
+   "tableau",
+   "python",
+   "power bi",
+   "sql",
+   "excel"
+  ],
+  "posted_at": "2026-10-18T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-100"
+ },
+ {
+  "id": "job-101",
+  "title": "Data Analyst",
+  "company": "Fathom Data",
+  "location": "Gurugram",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Turn raw data into dashboards and reports that guide business decisions. You will work in a small team and ship weekly. Experience with power bi and sql is expected.",
+  "skills": [
+   "power bi",
+   "sql",
+   "python",
+   "excel"
+  ],
+  "posted_at": "2026-11-24T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-101"
+ },
+ {
+  "id": "job-102",
+  "title": "Data Analyst",
+  "company": "Tidewater",
+  "location": "Pune",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Turn raw data into dashboards and reports that guide business decisions. We value ownership and clear writing. Experience with sql and tableau is expected.",
+  "skills": [
+   "sql",
+   "tableau",
+   "python",
+   "power bi"
+  ],
+  "posted_at": "2026-11-13T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-102"
+ },
+ {
+  "id": "job-103",
+  "title": "Data Analyst",
+  "company": "Kestrel AI",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Turn raw data into dashboards and reports that guide business decisions. Mentorship from senior engineers is part of the role. Experience with sql and tableau is expected.",
+  "skills": [
+   "sql",
+   "tableau",
+   "excel",
+   "power bi"
+  ],
+  "posted_at": "2026-11-06T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-103"
+ },
+ {
+  "id": "job-104",
+  "title": "Business Intelligence Analyst",
+  "company": "Quill Systems",
+  "location": "Mumbai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Turn raw data into dashboards and reports that guide business decisions. You will talk to users and own outcomes. Experience with excel and tableau is expected.",
+  "skills": [
+   "excel",
+   "tableau",
+   "sql",
+   "power bi",
+   "python"
+  ],
+  "posted_at": "2026-11-25T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-104"
+ },
+ {
+  "id": "job-105",
+  "title": "Business Intelligence Analyst",
+  "company": "Orbit Pay",
+  "location": "Pune",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Turn raw data into dashboards and reports that guide business decisions. We value ownership and clear writing. Experience with python and sql is expected.",
+  "skills": [
+   "python",
+   "sql",
+   "excel",
+   "tableau",
+   "power bi"
+  ],
+  "posted_at": "2026-11-08T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-105"
+ },
+ {
+  "id": "job-106",
+  "title": "Data Analyst",
+  "company": "Zephyr Cloud",
+  "location": "Mumbai",
+  "remote": false,
+  "job_type": "contract",
+  "seniority": "mid",
+  "description": "Write SQL, build Power BI dashboards and present insights to stakeholders. Mentorship from senior engineers is part of the role. Experience with excel and python is expected.",
+  "skills": [
+   "excel",
+   "python",
+   "sql",
+   "power bi"
+  ],
+  "posted_at": "2026-10-21T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-106"
+ },
+ {
+  "id": "job-107",
+  "title": "Data Analyst",
+  "company": "Zephyr Cloud",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "senior",
+  "description": "Turn raw data into dashboards and reports that guide business decisions. Mentorship from senior engineers is part of the role. Experience with power bi and python is expected.",
+  "skills": [
+   "power bi",
+   "python",
+   "sql",
+   "excel"
+  ],
+  "posted_at": "2026-11-04T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-107"
+ },
+ {
+  "id": "job-108",
+  "title": "Business Intelligence Analyst",
+  "company": "Brightpath",
+  "location": "Mumbai",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Turn raw data into dashboards and reports that guide business decisions. You will talk to users and own outcomes. Experience with sql and python is expected.",
+  "skills": [
+   "sql",
+   "python",
+   "excel",
+   "tableau",
+   "power bi"
+  ],
+  "posted_at": "2026-10-01T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-108"
+ },
+ {
+  "id": "job-109",
+  "title": "Site Reliability Engineer",
+  "company": "Mosaic Learn",
+  "location": "Mumbai",
+  "remote": false,
+  "job_type": "contract",
+  "seniority": "mid",
+  "description": "Own Kubernetes clusters, CI/CD pipelines and incident response. We value ownership and clear writing. Experience with ci/cd and docker is expected.",
+  "skills": [
+   "ci/cd",
+   "docker",
+   "kubernetes",
+   "terraform"
+  ],
+  "posted_at": "2026-10-28T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-109"
+ },
+ {
+  "id": "job-110",
+  "title": "Site Reliability Engineer",
+  "company": "Quill Systems",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Run infrastructure as code and keep deployments fast and reliable. We value ownership and clear writing. Experience with kubernetes and terraform is expected.",
+  "skills": [
+   "kubernetes",
+   "terraform",
+   "ci/cd",
+   "docker"
+  ],
+  "posted_at": "2026-11-11T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-110"
+ },
+ {
+  "id": "job-111",
+  "title": "Cloud Engineer",
+  "company": "Kestrel AI",
+  "location": "Gurugram",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Run infrastructure as code and keep deployments fast and reliable. We value ownership and clear writing. Experience with kubernetes and ci/cd is expected.",
+  "skills": [
+   "kubernetes",
+   "ci/cd",
+   "aws",
+   "docker",
+   "terraform"
+  ],
+  "posted_at": "2026-11-02T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-111"
+ },
+ {
+  "id": "job-112",
+  "title": "Cloud Engineer",
+  "company": "Kestrel AI",
+  "location": "Hyderabad",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Run infrastructure as code and keep deployments fast and reliable. You will talk to users and own outcomes. Experience with terraform and ci/cd is expected.",
+  "skills": [
+   "terraform",
+   "ci/cd",
+   "kubernetes",
+   "aws"
+  ],
+  "posted_at": "2026-10-28T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-112"
+ },
+ {
+  "id": "job-113",
+  "title": "Site Reliability Engineer",
+  "company": "Cobalt Mobility",
+  "location": "Chennai",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Own Kubernetes clusters, CI/CD pipelines and incident response. You will work in a small team and ship weekly. Experience with aws and kubernetes is expected.",
+  "skills": [
+   "aws",
+   "kubernetes",
+   "terraform",
+   "ci/cd",
+   "docker"
+  ],
+  "posted_at": "2026-10-10T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-113"
+ },
+ {
+  "id": "job-114",
+  "title": "Site Reliability Engineer",
+  "company": "Brightpath",
+  "location": "Hyderabad",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Own Kubernetes clusters, CI/CD pipelines and incident response. You will work in a small team and ship weekly. Experience with ci/cd and aws is expected.",
+  "skills": [
+   "ci/cd",
+   "aws",
+   "docker",
+   "terraform",
+   "kubernetes"
+  ],
+  "posted_at": "2026-09-30T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-114"
+ },
+ {
+  "id": "job-115",
+  "title": "Site Reliability Engineer",
+  "company": "Alder & Co",
+  "location": "Chennai",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "junior",
+  "description": "Run infrastructure as code and keep deployments fast and reliable. Mentorship from senior engineers is part of the role. Experience with terraform and aws is expected.",
+  "skills": [
+   "terraform",
+   "aws",
+   "kubernetes",
+   "ci/cd"
+  ],
+  "posted_at": "2026-10-08T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-115"
+ },
+ {
+  "id": "job-116",
+  "title": "DevOps Engineer",
+  "company": "Alder & Co",
+  "location": "Hyderabad",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Run infrastructure as code and keep deployments fast and reliable. You will talk to users and own outcomes. Experience with docker and ci/cd is expected.",
+  "skills": [
+   "docker",
+   "ci/cd",
+   "kubernetes",
+   "aws",
+   "terraform"
+  ],
+  "posted_at": "2026-10-23T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-116"
+ },
+ {
+  "id": "job-117",
+  "title": "Site Reliability Engineer",
+  "company": "Lumen Health",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Run infrastructure as code and keep deployments fast and reliable. You will talk to users and own outcomes. Experience with ci/cd and docker is expected.",
+  "skills": [
+   "ci/cd",
+   "docker",
+   "terraform",
+   "kubernetes",
+   "aws"
+  ],
+  "posted_at": "2026-10-25T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-117"
+ },
+ {
+  "id": "job-118",
+  "title": "DevOps Engineer",
+  "company": "Brightpath",
+  "location": "Pune",
+  "remote": true,
+  "job_type": "full-time",
+  "seniority": "mid",
+  "description": "Own Kubernetes clusters, CI/CD pipelines and incident response. Mentorship from senior engineers is part of the role. Experience with docker and terraform is expected.",
+  "skills": [
+   "docker",
+   "terraform",
+   "kubernetes",
+   "aws",
+   "ci/cd"
+  ],
+  "posted_at": "2026-11-20T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-118"
+ },
+ {
+  "id": "job-119",
+  "title": "DevOps Engineer",
+  "company": "Mosaic Learn",
+  "location": "Gurugram",
+  "remote": true,
+  "job_type": "internship",
+  "seniority": "intern",
+  "description": "Own Kubernetes clusters, CI/CD pipelines and incident response. We value ownership and clear writing. Experience with ci/cd and kubernetes is expected.",
+  "skills": [
+   "ci/cd",
+   "kubernetes",
+   "aws",
+   "terraform",
+   "docker"
+  ],
+  "posted_at": "2026-10-05T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-119"
+ },
+ {
+  "id": "job-120",
+  "title": "DevOps Engineer",
+  "company": "Quill Systems",
+  "location": "Chennai",
+  "remote": false,
+  "job_type": "full-time",
+  "seniority": "senior",
+  "description": "Own Kubernetes clusters, CI/CD pipelines and incident response. Mentorship from senior engineers is part of the role. Experience with aws and terraform is expected.",
+  "skills": [
+   "aws",
+   "terraform",
+   "ci/cd",
+   "docker",
+   "kubernetes"
+  ],
+  "posted_at": "2026-10-30T02:39:44.076598+00:00",
+  "salary_text": null,
+  "url": "https://example.com/jobs/job-120"
+ }
+]
